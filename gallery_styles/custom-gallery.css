@@ -1,0 +1,18 @@
+.resultitem {
+    width: calc(100% / 6) !important;
+    min-height: 85px !important;
+}
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.picflex .resultitem {
+    margin: 0 !important;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}

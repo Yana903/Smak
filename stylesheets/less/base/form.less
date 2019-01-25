@@ -1,0 +1,149 @@
+
+@form-height:                                   @global-control-height;
+@form-line-height:                              1.4;
+@form-padding:                                  20px;
+
+@form-background:                               transparent;
+@form-color:                                    #fff;
+
+@form-focus-background:                         transparent;
+@form-focus-color:                              @global-color;
+
+@form-disabled-background:                      #e7e6e6;
+@form-disabled-color:                           @global-muted-color;
+
+@form-placeholder-color:                        @form-color;
+
+@form-invalid-color:                            @global-danger-background;
+@form-valid-color:                              @global-success-background;
+
+@form-select-padding-right:                     20px;
+
+@form-control-margin-bottom:                    @global-margin;
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+input:not([type]),
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text],
+textarea,
+select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: @form-padding;
+  min-height: @form-height;
+  background: @form-background;
+  border: 1px solid #ffe5e5;
+  color: @global-inverse-color;
+  box-shadow: 0 0 0 0 transparent inset;
+  border-radius: 0;
+  .hook-form();
+}
+
+::placeholder {
+  color: @form-placeholder-color;
+  opacity: 1;
+  .hook-form-placeholder();
+}
+
+input:not([type]):focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+textarea:focus,
+select:focus {
+  background: @form-focus-background;
+  color: @form-focus-color;
+  .hook-form-focus();
+}
+
+input:not([type])[disabled],
+input[type=email][disabled],
+input[type=password][disabled],
+input[type=tel][disabled],
+input[type=text][disabled],
+textarea:disabled,
+select:disabled {
+  pointer-events: none;
+  opacity: .45;
+  background: @form-disabled-background;
+  color: @form-disabled-color;
+  .hook-form-disabled();
+}
+
+
+label.is-invalid {
+  color: @form-invalid-color;
+  .hook-form-label-invalid();
+}
+
+label.is-valid {
+  color: @form-valid-color;
+  .hook-form-label-valid();
+}
+
+input.is-invalid,
+input.is-invalid:focus {
+  color: @form-invalid-color;
+  border-color: @form-invalid-color;
+  .hook-form-invalid();
+}
+
+input.is-valid,
+input.is-valid:focus {
+  color: @form-valid-color;
+  border-color: @form-valid-color;
+  .hook-form-valid();
+}
+
+.hook-form-misc();
+
+//=========== Hooks
+
+.hook-form() {}
+.hook-form-hover() {}
+.hook-form-focus() {}
+.hook-form-disabled() {}
+.hook-form-placeholder() {};
+.hook-form-focus() {};
+.hook-form-disabled() {};
+.hook-form-invalid() {};
+.hook-form-valid() {};
+.hook-form-label-invalid() {};
+.hook-form-label-valid() {};
+
+.hook-form-misc() {}

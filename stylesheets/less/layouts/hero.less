@@ -1,0 +1,50 @@
+.hero {
+  width: 100%;
+  position: relative;
+  .hook-hero();
+}
+
+.hero-overlay,
+.hero-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-overlay {
+  .hook-hero-overlay();
+}
+
+.hero-background {
+  background: @global-primary-background;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .hook-hero-background();
+}
+
+.hero-foreground {
+  position: relative;
+  padding-top: 400px;
+  padding-bottom: 300px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .hook-hero-foreground();
+}
+
+.hook-hero-misc();
+
+//=========== Hooks
+
+.hook-hero() {}
+.hook-hero-overlay() {}
+.hook-hero-background() {}
+.hook-hero-foreground() {}
+.hook-hero-misc() {}
