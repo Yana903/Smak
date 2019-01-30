@@ -896,7 +896,7 @@
 
 @media screen and (max-width: 800px) {
   .container-slider {
-    max-width: 650px;
+    max-width: 500px;
   }
 
   .logo1 {
@@ -912,7 +912,7 @@
     margin-right: 40px;
     touch-action: auto;
 
-    &:hover .icon-menu{
+    &:hover .icon-menu {
       fill: #ffe600;
     }
   }
@@ -960,7 +960,7 @@
 
   .responsive {
     position: absolute;
-    max-width: 600px;
+    max-width: 500px;
     left: 0;
     right: 0;
     top: 125px;
@@ -985,6 +985,31 @@
     color: #fff;
   }
 
+  .grid-features .grid-item {
+    width: calc(100% / 3);
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+
+  .card-title h3 {
+    font-size: 18px;
+  }
+
+  .card-description p {
+    font-size: 16px;
+  }
+  
+  .slider-quote {
+    width: 500px;
+    font-size: 14px;
+  }
+
+  .counter-up .counterup-text {
+    font-family: 'OswaldRegular';
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
