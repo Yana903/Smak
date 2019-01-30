@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
 
 
-  <link rel="stylesheet" href="slick_styles/slick.css">
-  <link rel="stylesheet" href="slick_styles/slick-theme.css">
+  <link rel="stylesheet" href="stylesheets/slick_styles/slick.css">
+  <link rel="stylesheet" href="stylesheets/slick_styles/slick-theme.css">
 
-  <link rel="stylesheet" href="gallery_styles/google-gallery.min.css">
-  <link rel="stylesheet" href="gallery_styles/custom-gallery.css">
+  <link rel="stylesheet" href="stylesheets/gallery_styles/google-gallery.min.css">
+  <link rel="stylesheet" href="stylesheets/gallery_styles/custom-gallery.css">
 
 
   <link rel="stylesheet" href="stylesheets/css/styles.css">
@@ -25,6 +25,13 @@
 <body>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <title>menu</title>
+      <path d="M0 6.080v1.6h31.36v-3.2h-31.36v1.6z"></path>
+      <path d="M0 15.68v1.6h31.808l-0.32-1.6-0.256-1.6h-31.232v1.6z"></path>
+      <path d="M0 25.28v1.6h31.808l-0.32-1.6-0.256-1.6h-31.232v1.6z"></path>
+    </symbol>
+
     <symbol id="icon-angle-double-down" viewBox="0 0 18 28">
       <title>angle-double-down</title>
       <path d="M16.797 13.5c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.219-0.156 0.359-0.156 0.125 0 0.266 0.063 0.359 0.156l6.141 6.141 6.141-6.141c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.234 0.156 0.359zM16.797 7.5c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.219-0.156 0.359-0.156 0.125 0 0.266 0.063 0.359 0.156l6.141 6.141 6.141-6.141c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.234 0.156 0.359z"></path>
@@ -169,11 +176,12 @@
         <div class="container-smak">
           <div class="layout layout-header">
             <div class="layout-item">
-              <a href="#"><img src="images/logo.png"></a>
+              <a href="#" class="logo1"><img src="images/logo.png"></a>
             </div>
             <div class="layout-item">
-              <nav class="navbar">
-                <ul class="navbar-nav">
+              <nav class="navbar1">
+                <a class="button-burger" href="javascript:void(0);" onclick="Burger()"> <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
+                <ul class="navbar1-nav" id="js_nav">
                   <li>
                     <a href="#" class="is-active">HOME</a>
                   </li>
@@ -210,7 +218,6 @@
         </svg>
       </a>
     </section>
-  </section>
   </section>
 <!---------------------------------------------------->
   <section class="section section-services">
@@ -1495,8 +1502,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/google-gallery.min.js"></script>
 
-<!--<script src="js/jquery-1.11.3.min.js"></script>-->
-<!--<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>-->
+
+<script src="js/burger_menu.js"></script>
 <script src="js/circle-progress.min.js"></script>
 <script src="js/custom_progress.js"></script>
 <script type="text/javascript" src="js/anchor.js"></script>

@@ -40,16 +40,25 @@
 }
 
 .hook-component() {
-  .navbar {
+  .navbar1 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 0;
+
+    .icon-menu {
+      fill: #fff !important;
+      display: none;
+      width: 1em;
+      height: 1em;
+    }
   }
 
-  .navbar-nav {
+  .navbar1-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0;
 
     li {
       font-family: 'OswaldBold';
@@ -147,6 +156,15 @@
     }
   }
 }
+
+//.hook-icon-misc() {
+//  .icon-menu {
+//    fill: #fff !important;
+//    display: none;
+//    width: 1em;
+//    height: 1em;
+//  }
+//}
 
 .hook-icon-misc() {
   .icons {
@@ -504,7 +522,7 @@
   .person-image {
     position: relative;
     max-width: 100%;
-    height: 250px;
+    height: auto;
     overflow-y: hidden;
     margin-bottom: 10px;
 
@@ -777,7 +795,9 @@
 
   .card-description {
     p {
-      font-size: 20px;
+      font-size: 18px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }
@@ -873,15 +893,13 @@
   }
 }
 
-//@media screen and (max-width: 800px) {
-//  ul.navbar-nav{
-//    position: absolute;
-//    transition: 0.3s;
-//  }
-//}
+@media screen and (max-width: 2000px) {
+  .container-slider {
+    max-width: 750px;
+  }
+}
 
-
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
 
   h1 {
     font-size: 32px;
@@ -906,12 +924,81 @@
     }
   }
 
-  .navbar {
-    margin-bottom: 0;
+  .logo1 {
+    margin-left: 30px;
   }
 
-  .navbar-nav {
+  .button-burger {
+    margin-right: 40px;
+  }
+
+  .navbar1-nav {
     margin: 0;
+  }
+
+  .navbar1 {
+    .icon-menu {
+      display: block;
+    }
+  }
+
+  .navbar1-nav li {
+    margin-right: 0;
+
+    &:not(:first-child)::before {
+      display: none;
+    }
+
+    &:not(:first-child) {
+      padding-left: 0;
+    }
+
+    &:not(:last-child) {
+      padding-right: 0;
+    }
+  }
+
+  .responsive li a {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'OswaldRegular';
+  }
+
+ .responsive li a.is-active,
+  .responsive li a:hover {
+    color: #ffe600;
+    border: none;
+  }
+
+ .responsive li a:focus {
+    border: none;
+    color: #ffe600;
+  }
+
+  .responsive {
+    position: absolute;
+    left: 725px;
+    right: 0;
+    top: 95px;
+    z-index: 100;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+   li {
+    display: none;
+  }
+
+ .responsive li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .responsive li a {
+    display: block;
+    color: #fff;
   }
 
   .icons {
@@ -964,12 +1051,8 @@
     margin-bottom: 10px;
   }
 
-  .person-image {
-    height: 160px;
-  }
-
   .person-name, .person-position {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .person-data .divider {

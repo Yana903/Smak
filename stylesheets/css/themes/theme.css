@@ -1,7 +1,12 @@
 .hook-button-cross {
   background: #131316;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 2000px) {
+  .container-slider {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 800px) {
   h1 {
     font-size: 32px;
   }
@@ -20,11 +25,70 @@
     padding: 10px 25px;
     min-height: 40px;
   }
-  .navbar {
-    margin-bottom: 0;
+  .logo1 {
+    margin-left: 30px;
   }
-  .navbar-nav {
+  .button-burger {
+    margin-right: 40px;
+  }
+  .navbar1-nav {
     margin: 0;
+  }
+  .navbar1 .icon-menu {
+    display: block;
+  }
+  .navbar1-nav li {
+    margin-right: 0;
+  }
+  .navbar1-nav li:not(:first-child)::before {
+    display: none;
+  }
+  .navbar1-nav li:not(:first-child) {
+    padding-left: 0;
+  }
+  .navbar1-nav li:not(:last-child) {
+    padding-right: 0;
+  }
+  .responsive li a {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'OswaldRegular';
+  }
+  .responsive li a.is-active,
+  .responsive li a:hover {
+    color: #ffe600;
+    border: none;
+  }
+  .responsive li a:focus {
+    border: none;
+    color: #ffe600;
+  }
+  .responsive {
+    position: absolute;
+    left: 725px;
+    right: 0;
+    top: 95px;
+    z-index: 100;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  li {
+    display: none;
+  }
+  .responsive li {
+    display: block;
+    margin-right: 0;
+  }
+  .responsive li a {
+    display: block;
+    color: #fff;
   }
   .icons {
     padding: 10px;
@@ -44,93 +108,90 @@
   .picflex .resultitem.open {
     height: 520px !important;
   }
-}
-.picflex .detailview .thumbImage .detail-img {
-  height: 220px;
-}
-.picflex .detailview {
-  height: 350px;
-}
-.counter-up .counterup-text {
-  font-size: 30px;
-}
-.counter-up .counterup-text-description {
-  font-size: 14px;
-}
-.section-team .heading {
-  margin-bottom: 30px;
-}
-.grid-statistic,
-.grid-team,
-.grid-progress {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.person-image {
-  height: 160px;
-}
-.person-name,
-.person-position {
-  font-size: 18px;
-}
-.person-data .divider {
-  width: 150px;
-}
-svg[class*=" icon-"].icon-cross {
-  width: 14px;
-  height: 14px;
-}
-.section-person p {
-  font-size: 14px;
-  margin-top: 5px;
-}
-.icons-social a {
-  padding: 5px;
-}
-.services-description {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.grid-clients {
-  margin-top: 40px;
-}
-.icons-group {
-  margin-top: 20px;
-}
-.icons-group .icons {
-  padding: 10px;
-}
-blockquote {
-  font-size: 18px;
-}
-.author {
-  margin-top: 5px;
-}
-.container-slider {
-  max-width: 650px;
-}
-input[type=text] {
-  padding: 10px;
-}
-.form-feedback textarea {
-  min-height: 150px;
-}
-.button {
-  min-height: 0;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-.section-footer {
-  min-height: 800px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-.footer-icons-social {
-  margin-bottom: 50px;
-}
-.copyrights p {
-  font-size: 14px;
+  .picflex .detailview .thumbImage .detail-img {
+    height: 220px;
+  }
+  .picflex .detailview {
+    height: 350px;
+  }
+  .counter-up .counterup-text {
+    font-size: 30px;
+  }
+  .counter-up .counterup-text-description {
+    font-size: 14px;
+  }
+  .section-team .heading {
+    margin-bottom: 30px;
+  }
+  .grid-statistic,
+  .grid-team,
+  .grid-progress {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .person-name,
+  .person-position {
+    font-size: 16px;
+  }
+  .person-data .divider {
+    width: 150px;
+  }
+  svg[class*=" icon-"].icon-cross {
+    width: 14px;
+    height: 14px;
+  }
+  .section-person p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .icons-social a {
+    padding: 5px;
+  }
+  .services-description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .grid-clients {
+    margin-top: 40px;
+  }
+  .icons-group {
+    margin-top: 20px;
+  }
+  .icons-group .icons {
+    padding: 10px;
+  }
+  blockquote {
+    font-size: 18px;
+  }
+  .author {
+    margin-top: 5px;
+  }
+  .container-slider {
+    max-width: 650px;
+  }
+  input[type=text] {
+    padding: 10px;
+  }
+  .form-feedback textarea {
+    min-height: 150px;
+  }
+  .button {
+    min-height: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .section-footer {
+    min-height: 800px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .footer-icons-social {
+    margin-bottom: 50px;
+  }
+  .copyrights p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
