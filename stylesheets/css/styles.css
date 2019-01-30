@@ -1342,13 +1342,15 @@ svg.icon-chevrons-right {
 }
 @media screen and (max-width: 1210px) {
   .container-slider {
-    max-width: 700px;
+    max-width: 650px;
   }
   .logo1 {
     margin-left: 30px;
   }
   .button-burger {
     margin-right: 40px;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
   }
   .navbar1-nav {
     margin: 0;
@@ -1521,6 +1523,8 @@ svg.icon-chevrons-right {
     min-height: 0;
     padding: 10px 20px;
     font-size: 16px;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
   }
   .section-footer {
     min-height: 800px;
