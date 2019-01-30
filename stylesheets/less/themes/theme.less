@@ -897,6 +897,95 @@
   .container-slider {
     max-width: 750px;
   }
+
+  .navbar1-nav li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .container-slider {
+    max-width: 700px;
+  }
+
+
+  .logo1 {
+    margin-left: 30px;
+  }
+
+  .button-burger {
+    margin-right: 40px;
+  }
+
+  .navbar1-nav {
+    margin: 0;
+  }
+
+  .navbar1 {
+    .icon-menu {
+      display: block;
+    }
+  }
+
+  .responsive li {
+    margin-right: 0;
+
+    &:not(:first-child)::before {
+      display: none;
+    }
+
+    &:not(:first-child) {
+      padding-left: 0;
+    }
+
+    &:not(:last-child) {
+      padding-right: 0;
+    }
+  }
+
+  .responsive li a {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'OswaldRegular';
+  }
+
+  .responsive li a.is-active,
+  .responsive li a:hover {
+    color: #ffe600;
+    border: none;
+  }
+
+  .responsive li a:focus {
+    border: none;
+    color: #ffe600;
+  }
+
+  .responsive {
+    position: absolute;
+    left: 1110px;
+    right: 0;
+    top: 95px;
+    z-index: 100;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .navbar1-nav li {
+    display: none;
+  }
+
+  .responsive li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .responsive li a {
+    display: block;
+    color: #fff;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -923,82 +1012,9 @@
       min-height: 40px;
     }
   }
-
-  .logo1 {
-    margin-left: 30px;
-  }
-
-  .button-burger {
-    margin-right: 40px;
-  }
-
-  .navbar1-nav {
-    margin: 0;
-  }
-
-  .navbar1 {
-    .icon-menu {
-      display: block;
-    }
-  }
-
-  .navbar1-nav li {
-    margin-right: 0;
-
-    &:not(:first-child)::before {
-      display: none;
-    }
-
-    &:not(:first-child) {
-      padding-left: 0;
-    }
-
-    &:not(:last-child) {
-      padding-right: 0;
-    }
-  }
-
-  .responsive li a {
-    color: #fff;
-    font-size: 13px;
-    font-family: 'OswaldRegular';
-  }
-
- .responsive li a.is-active,
-  .responsive li a:hover {
-    color: #ffe600;
-    border: none;
-  }
-
- .responsive li a:focus {
-    border: none;
-    color: #ffe600;
-  }
-
+  
   .responsive {
-    position: absolute;
     left: 725px;
-    right: 0;
-    top: 95px;
-    z-index: 100;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-   li {
-    display: none;
-  }
-
- .responsive li {
-    display: block;
-    margin-right: 0;
-  }
-
-  .responsive li a {
-    display: block;
-    color: #fff;
   }
 
   .icons {
