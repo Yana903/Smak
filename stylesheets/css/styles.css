@@ -1332,7 +1332,7 @@ svg.icon-chevrons-right {
 .hook-button-cross {
   background: #131316;
 }
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 960px) {
   .container-slider {
     max-width: 750px;
   }
@@ -1340,7 +1340,7 @@ svg.icon-chevrons-right {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 768px) {
   .container-slider {
     max-width: 650px;
   }
