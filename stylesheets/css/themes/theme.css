@@ -10,9 +10,6 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .container-slider {
-    max-width: 500px;
-  }
   .logo1 {
     margin-left: 30px;
   }
@@ -104,8 +101,11 @@
   .card-description p {
     font-size: 16px;
   }
+  .container-slider {
+    max-width: 400px;
+  }
   .slider-quote {
-    width: 500px;
+    width: 350px;
     font-size: 14px;
   }
   .counter-up .counterup-text {
