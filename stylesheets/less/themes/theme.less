@@ -47,7 +47,7 @@
     margin-bottom: 0;
 
     .icon-menu {
-      fill: #fff !important;
+      fill: #fff;
       display: none;
       width: 1em;
       height: 1em;
@@ -156,15 +156,6 @@
     }
   }
 }
-
-//.hook-icon-misc() {
-//  .icon-menu {
-//    fill: #fff !important;
-//    display: none;
-//    width: 1em;
-//    height: 1em;
-//  }
-//}
 
 .hook-icon-misc() {
   .icons {
@@ -916,6 +907,10 @@
   .button-burger {
     margin-right: 40px;
     touch-action: manipulation;
+
+    &:hover .icon-menu{
+      fill: #ffe600;
+    }
   }
 
   .navbar1-nav {
@@ -925,6 +920,7 @@
   .navbar1 {
     .icon-menu {
       display: block;
+      touch-action: manipulation;
     }
   }
 

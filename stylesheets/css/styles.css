@@ -942,7 +942,7 @@ svg[class*=" icon-"].svg.icon-google {
   margin-bottom: 0;
 }
 .navbar1 .icon-menu {
-  fill: #fff !important;
+  fill: #fff;
   display: none;
   width: 1em;
   height: 1em;
@@ -1352,11 +1352,16 @@ svg.icon-chevrons-right {
     -ms-touch-action: manipulation;
     touch-action: manipulation;
   }
+  .button-burger:hover .icon-menu {
+    fill: #ffe600;
+  }
   .navbar1-nav {
     margin: 0;
   }
   .navbar1 .icon-menu {
     display: block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
   }
   .responsive li {
     margin-right: 0;

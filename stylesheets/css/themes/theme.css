@@ -21,11 +21,16 @@
     -ms-touch-action: manipulation;
     touch-action: manipulation;
   }
+  .button-burger:hover .icon-menu {
+    fill: #ffe600;
+  }
   .navbar1-nav {
     margin: 0;
   }
   .navbar1 .icon-menu {
     display: block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
   }
   .responsive li {
     margin-right: 0;
