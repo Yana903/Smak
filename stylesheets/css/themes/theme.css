@@ -1,7 +1,7 @@
 .hook-button-cross {
   background: #131316;
 }
-@media screen and (max-width: 1900px), screen and (orientation: landscape) {
+@media screen and (max-width: 1800px) {
   .container-slider {
     max-width: 750px;
   }
@@ -9,7 +9,7 @@
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1100px) {
   .container-slider {
     max-width: 650px;
   }
