@@ -924,6 +924,12 @@
     }
   }
 
+  a.icons.anchor,
+  .icons-group .icons{
+    padding: 10px;
+  }
+
+
   .responsive li {
     margin-right: 0;
 
@@ -1012,157 +1018,299 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+.person-name, .person-position {
+  font-size: 16px;
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
 
-  h1 {
-    font-size: 32px;
+.footer-icons-social {
+  margin-bottom: 50px;
+}
+
+.copyrights {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  input[type="text"]:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .hero-foreground {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .hero-title h1 {
+    font-size: 28px;
+  }
+
+  .button {
+    padding: 14px 20px;
+    font-size: 16px;
+    min-height: 30px;
   }
 
   h2 {
     font-size: 24px;
   }
 
-  h3 {
-    font-size: 19px;
-  }
-
-  .hero-foreground {
-    padding-top: 250px;
-    padding-bottom: 150px;
-
-    .button {
-      font-size: 16px;
-      padding: 10px 25px;
-      min-height: 40px;
-    }
-  }
-
-  .icons {
-    padding: 10px;
-  }
-
-  .section {
-    padding-top: 30px;
-  }
-
-  .services-description {
-    margin-bottom: 20px;
-  }
-
-  .card-description p {
-    font-size: 16px;
-  }
-
-  .layout-done {
-    margin-top: 30px;
-  }
-
-  //For gallery
-  .picflex .resultitem.open {
-    height: 520px !important;
-  }
-
-  .picflex .detailview .thumbImage .detail-img {
-    height: 220px;
-  }
-
-  .picflex .detailview {
-    height: 350px;
-  }
-
-  .counter-up .counterup-text {
-    font-size: 30px;
-  }
-
-  .counter-up .counterup-text-description {
-    font-size: 14px;
-  }
-
-  .section-team .heading {
-    margin-bottom: 30px;
-  }
-
-  .grid-statistic, .grid-team, .grid-progress {
+  .grid-team, .grid-clients {
     margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .person-name, .person-position {
-    font-size: 16px;
   }
 
   .person-data .divider {
-    width: 150px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo1 {
+    margin-left: 10px;
   }
 
-  svg[class*=" icon-"].icon-cross {
-    width: 14px;
-    height: 14px;
+  .button-burger {
+    margin-right: 10px;
   }
 
-  .section-person p {
-    font-size: 14px;
-    margin-top: 5px;
+  .responsive {
+    max-width: 300px;
   }
 
-  .icons-social a {
-    padding: 5px;
+  .hero-foreground {
+    padding-top: 100px;
+    padding-bottom: 20px;
   }
 
-  .services-description {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .grid-clients {
-    margin-top: 40px;
-  }
-
-  .icons-group {
-    margin-top: 20px;
-  }
-
-  .icons-group .icons {
-    padding: 10px;
-  }
-
-  blockquote {
-    font-size: 18px;
-  }
-
-  .author {
-    margin-top: 5px;
-  }
-
-  .container-slider {
-    max-width: 650px;
-  }
-
-  input[type=text] {
-    padding: 10px;
-  }
-
-  .form-feedback textarea {
-    min-height: 150px;
+  .hero-title h1 {
+    font-size: 20px;
   }
 
   .button {
-    min-height: 0;
-    padding: 10px 20px;
+    padding: 14px 20px;
     font-size: 16px;
-    touch-action: manipulation;
+    min-height: 30px;
   }
 
-  .section-footer {
-    min-height: 800px;
-    justify-content: flex-end;
+  h2 {
+    font-size: 18px;
   }
 
-  .footer-icons-social {
-    margin-bottom: 50px;
-  }
-
-  .copyrights p {
+  .services-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
   }
+
+  .grid-services {
+    margin-top: 30px;
+  }
+
+  svg[class^="icon-"].icon-css3,
+  svg[class*=" icon-"].icon-css3,
+  svg[class^="icon-"].icon-pen,
+  svg[class*=" icon-"].icon-pen,
+  svg[class^="icon-"].icon-camera,
+  svg[class*=" icon-"].icon-camera,
+  svg[class^="icon-"].icon-cog,
+  svg[class*=" icon-"].icon-cog,
+  svg[class^="icon-"].icon-lab,
+  svg[class*=" icon-"].icon-lab,
+  svg[class^="icon-"].con-drawer,
+  svg[class*=" icon-"].con-drawer,
+  svg[class^="icon-"].icon-hammer,
+  svg[class*=" icon-"].icon-hammer,
+  svg[class^="icon-"].icon-spinner,
+  svg[class*=" icon-"].icon-spinner,
+  svg[class^="icon-"].icon-truck,
+  svg[class*=" icon-"].icon-truck,
+  svg[class^="icon-"].icon-alarm,
+  svg[class*=" icon-"].icon-alarm,
+  svg[class^="icon-"].icon-like,
+  svg[class*=" icon-"].icon-like,
+  svg[class^="icon-"].icon-lifebuoy,
+  svg[class*=" icon-"].icon-lifebuoy,
+  svg[class^="icon-"].icon-bubbles,
+  svg[class*=" icon-"].icon-bubbles,
+  svg[class^="icon-"].icon-home,
+  svg[class*=" icon-"].icon-home,
+  svg[class^="icon-"].icon-bubble,
+  svg[class*=" icon-"].icon-bubble,
+  svg[class^="icon-"].icon-phone,
+  svg[class*=" icon-"].icon-phone,
+  svg[class^="icon-"].icon-drawer,
+  svg[class*=" icon-"].icon-drawer {
+    width: 20px;
+    height: 20px;
+  }
+
+  .grid-services .grid-item {
+    width: calc(100% / 2);
+    margin-bottom: 20px;
+  }
+
+  .navbar-done li a {
+    font-size: 10px;
+  }
+
+  .navbar-done li:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  .navbar-done li:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  .done-title p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .section-done {
+    padding-bottom: 10px;
+  }
+
+  .section-opinion {
+    padding-top: 10px;
+  }
+
+  .layout-done {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .layout-item {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &:last-child {
+        margin-top: 20px;
+
+      }
+    }
+  }
+
+  .section-sample {
+    display: none;
+  }
+
+  .section-statistic, .section-about {
+    padding-bottom: 10px;
+  }
+
+  .section-opinion .anchor {
+    margin-bottom: 45px;
+  }
+
+  .grid-statistic {
+    margin-top: 10px;
+  }
+
+  .grid-statistic .grid-item {
+    width: calc(100% / 2);
+    margin-bottom: 20px;
+  }
+
+  .section-statistic .heading {
+    margin-bottom: 20px;
+  }
+
+  .layout-about {
+    display: block;
+
+    .layout-item:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .about li {
+    width: 200px;
+  }
+
+  .services-description {
+    margin-bottom: 30px;
+  }
+
+  .about li:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  .about p {
+    margin-top: 10px;
+  }
+
+  .section-team .heading {
+    margin-bottom: 10px;
+  }
+
+  .grid-team .grid-item, .grid-progress .grid-item {
+    width: calc(100% / 2);
+    margin-bottom: 10px;
+  }
+
+  .person-data .divider {
+    width: 100px;
+  }
+
+  .grid-team {
+    margin-bottom: 10px;
+  }
+
+  .hide-active p {
+    text-align: center;
+  }
+
+  .person-name {
+    display: flex;
+    padding-left: 20px;
+  }
+
+  .icons-social {
+    justify-content: center;
+  }
+
+  .section-team, .section-person {
+    margin-bottom: 0;
+  }
+
+  .section-team {
+    margin-top: 10px;
+  }
+
+  .grid-clients {
+    margin-top: 10px;
+  }
+
+  .grid-clients .grid-item {
+    width: calc(100% / 3);
+  }
+
+  .card-title h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .card-description p {
+    font-size: 11px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    min-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .form-feedback textarea {
+    min-height: 115px;
+  }
 }
+
