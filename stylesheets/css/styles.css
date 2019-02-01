@@ -1424,6 +1424,13 @@ svg.icon-chevrons-right {
     display: block;
     color: #fff;
   }
+  .grid-statistic {
+    margin-bottom: 10px;
+  }
+  .section-statistic .heading {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .grid-features .grid-item {
     width: calc(100% / 3);
   }
