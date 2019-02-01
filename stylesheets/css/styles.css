@@ -1488,12 +1488,48 @@ svg.icon-chevrons-right {
   h2 {
     font-size: 24px;
   }
+  .services-description {
+    margin-bottom: 20px;
+  }
   .grid-team,
   .grid-clients {
     margin-top: 10px;
   }
   .person-data .divider {
     width: 130px;
+  }
+  .section-sample {
+    display: none;
+  }
+  .section-done {
+    padding-bottom: 30px;
+  }
+  .layout-done {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .layout-done .layout-item {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .layout-done .layout-item:last-child {
+    margin-top: 20px;
+  }
+  .layout-done .done-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .layout-done .done-description p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
